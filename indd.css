@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+    --sexy-blue: rgb(83, 83, 243);
+    --white: #ffffff;
+}
+body{
+    font-family: 'Lato';
+}
+
+
+@media(max-width:991px) {
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.832);
+        /* color: white; */
+        backdrop-filter: blur(3px);
+        /* z-index: 0; */
+    }
+    section{
+        height: auto!important;
+    }
+    
+}
+@media(max-width:512px) {
+    .skill-img{
+        /* height: 70px; */
+        height: 35px;
+    }
+    
+}
+.form-control:focus{
+    background-color: rgb(255, 255, 255);
+}
+
+@media(min-width:991px) {
+    #home .row img:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform: translate(0px, -3px);
+    }
+    .buttons-home button:hover, form button:hover{
+        border: 1px solid black;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform: translate(0px, -1px);
+    }
+    .box-border:hover{
+        box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
+    }
+    footer{
+        /* position: sticky; */
+        position: relative;
+        bottom: 70px;
+    }
+}
+
+#navi{
+    background: #ffffffb5;
+    backdrop-filter: blur(4px);
+    /* height: 100vh; */
+    /* border-bottom: #160a0a; */
+    z-index: 1;
+    /* box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12); */
+}
+
+
+.active{
+    color: white!important;
+    background-color: var(--sexy-blue)!important;
+    border-radius: 7px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.skill-img{
+    /* height: 70px; */
+    max-height: 60px;
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+
+#home .row img{
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-link{
+    transition: text-decoration 300ms ease-in-out;
+}
+
+.nav-link:hover{
+    /* text-decoration: underline; */
+    background-color: rgba(171, 171, 255, 0.201);
+    border-radius: 7px;
+    text-underline-offset: 0.1em;
+}
+
+.buttons-home button , form button{
+    border-radius: 25px!important;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.btn-dark{
+    background-color: #171212;
+}
+
+section{
+    height: 100vh;
+}
+.box-head{
+    padding-top: 5px;
+}
+.box-border{
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+ul li{
+    padding-bottom: 7px;
+}
+li ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: inherit;    
+}
+form input, textarea{
+    /* border: 1px solid black!important; */
+    border: solid var(--sexy-blue)!important;
+    border-width: 1px 2px 2px 1px!important;
+}
+.socmed-icon a{
+    border-radius: 50%;
+    background-color: black;
+    padding: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+.socmed-icon a i{
+    width: 21px;
+    /* height: 10px; */
+}
