@@ -295,7 +295,7 @@
         <div class="row">
           <div class="container d-flex justify-content-center">
             <form class="col-lg-4 col-md-12" method="POST" name="Contact-Form" onSubmit="Submit" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input class="d-none" name="bot-field">
+                <input type="hidden" name="form-name" value="Contact-Form">
               
                 <label for="Name" class="form-label mb-1">Name *</label>
                 <input type="text" class="form-control mb-2" id="Name" required>
@@ -307,7 +307,7 @@
               
                 <label for="Phone" class="form-label mb-1">Phone</label>
                 <input type="tel" class="form-control mb-2" id="Phone" autocomplete="off">
-              
+      
               
                 <label for="Message" class="form-label mb-1">Message</label>
                 <textarea id="Message" class="form-control overflow-y-hidden mb-2" rows="3" autocomplete="off"></textarea>
