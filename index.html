@@ -294,10 +294,11 @@
 
         <div class="row">
           <div class="container d-flex justify-content-center">
-            <form class="col-lg-4 col-md-12" method="POST" data-netlify="true">
+            <form class="col-lg-4 col-md-12" method="POST" name="Contact-Form" onSubmit="Submit" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input class="d-none" name="bot-field">
               
                 <label for="Name" class="form-label mb-1">Name *</label>
-                <input type="text" class="form-control mb-2" id="Name" aria-describedby="emailHelp" required>
+                <input type="text" class="form-control mb-2" id="Name" required>
               
               
                 <label for="E-Mail" class="form-label mb-1">E-Mail *</label>
